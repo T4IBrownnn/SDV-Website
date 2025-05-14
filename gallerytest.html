@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scrollable Gallery</title>
+  <link rel="stylesheet" href="gallerytest.css" />
+</head>
+<body>
+ <button><a href="index.html">Go back you fool</a></button>
+  
+ <div class="gallery-container">
+    <button class="scroll-btn left" onclick="scrollGallery(-300)">←</button>
+
+    <div class="gallery">
+      <img src="nightt.png" alt="Image 1" />
+      <img src="slowly-turning-emoji.gif" alt="Image 2" />
+      <img src="OIIA-Website-loop.gif" alt="OIIA" />
+      <img src="istockphoto-155445551-612x612.jpg" alt="Image 4" />
+      <!-- Add more images as needed -->
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollGallery(300)">→</button>
+  </div>
+  <div style="margin-top: 100em;margin-bottom: 100em;">
+  <div id="parallax-container">
+  <div class="layer" data-speed="0.2"><img src="nightt.png" alt="Layer 1"></div>
+  <div class="layer" data-speed="0.4"><img src="slowly-turning-emoji.gif" alt="Layer 2"></div>
+  <div class="layer" data-speed="0.6"><img src="OIIA-Website-loop.gif" alt="Layer 3"></div>
+  <div class="layer" data-speed="0.8"><img src="Junimo.gif" alt="Layer 4"></div>
+</div>
+</div>
+
+
+<!-- <div style="max-width: 960px;" class="ml-slider-3-10-3 metaslider metaslider-nivo metaslider-1382 ml-slider">
+    
+    <div id="metaslider_container_1382">
+        <div class="slider-wrapper theme-default"><div class="ribbon"></div><div id="metaslider_1382" class="nivoSlider"><img width="960" height="540" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" class="slider-1382 slide-1419" alt="" data-caption="" data-thumb="" title="1_1screenshot15" rel="" srcset="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png 960w, https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15-300x169.png 300w, https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15-768x432.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" style="width: 960px; visibility: hidden; display: inline;"><img width="960" height="540" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/NightMarket-1-1.png" class="slider-1382 slide-1416" alt="" data-caption="" data-thumb="" title="NightMarket (1)" rel="" srcset="https://www.stardewvalley.net/wp-content/uploads/2018/12/NightMarket-1-1.png 960w, https://www.stardewvalley.net/wp-content/uploads/2018/12/NightMarket-1-1-300x169.png 300w, https://www.stardewvalley.net/wp-content/uploads/2018/12/NightMarket-1-1-768x432.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" style="width: 960px; visibility: hidden; display: inline;"><img width="960" height="540" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/Multiplayer_Screenshot2-1.png" class="slider-1382 slide-1418" alt="" data-caption="" data-thumb="" title="Multiplayer_Screenshot2" rel="" srcset="https://www.stardewvalley.net/wp-content/uploads/2018/12/Multiplayer_Screenshot2-1.png 960w, https://www.stardewvalley.net/wp-content/uploads/2018/12/Multiplayer_Screenshot2-1-300x169.png 300w, https://www.stardewvalley.net/wp-content/uploads/2018/12/Multiplayer_Screenshot2-1-768x432.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" style="width: 960px; visibility: hidden; display: inline;"><img width="960" height="540" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_12-1.png" class="slider-1382 slide-1412" alt="" data-caption="" data-thumb="" title="StardewValley_12" rel="" srcset="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_12-1.png 960w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_12-1-300x169.png 300w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_12-1-768x432.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" style="width: 960px; visibility: hidden; display: inline;"><img width="960" height="540" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_4.png" class="slider-1382 slide-1415" alt="" data-caption="" data-thumb="" title="StardewValley_4" rel="" srcset="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_4.png 960w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_4-300x169.png 300w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_4-768x432.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" style="width: 960px; visibility: hidden; display: inline;"><img width="960" height="540" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_11.png" class="slider-1382 slide-1421" alt="" data-caption="" data-thumb="" title="StardewValley_11" rel="" srcset="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_11.png 960w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_11-300x169.png 300w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_11-768x432.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" style="width: 960px; visibility: hidden; display: inline;"><img width="960" height="540" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_5.png" class="slider-1382 slide-1414" alt="" data-caption="" data-thumb="" title="StardewValley_5" rel="" srcset="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_5.png 960w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_5-300x169.png 300w, https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_5-768x432.png 768w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" style="width: 960px; visibility: hidden; display: inline;"><img class="nivo-main-image" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" alt="" style="width: 960px; height: 540px;"><div class="nivo-caption"></div><div class="nivo-directionNav"><a class="nivo-prevNav">Previous</a><a class="nivo-nextNav">Next</a></div><div class="nivo-slice" name="0" style="left: 0px; width: 960px; height: 540px; opacity: 1; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-0px;"></div><div class="nivo-slice" name="1" style="left: 64px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-64px;"></div><div class="nivo-slice" name="2" style="left: 128px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-128px;"></div><div class="nivo-slice" name="3" style="left: 192px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-192px;"></div><div class="nivo-slice" name="4" style="left: 256px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-256px;"></div><div class="nivo-slice" name="5" style="left: 320px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-320px;"></div><div class="nivo-slice" name="6" style="left: 384px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-384px;"></div><div class="nivo-slice" name="7" style="left: 448px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-448px;"></div><div class="nivo-slice" name="8" style="left: 512px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-512px;"></div><div class="nivo-slice" name="9" style="left: 576px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-576px;"></div><div class="nivo-slice" name="10" style="left: 640px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-640px;"></div><div class="nivo-slice" name="11" style="left: 704px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-704px;"></div><div class="nivo-slice" name="12" style="left: 768px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-768px;"></div><div class="nivo-slice" name="13" style="left: 832px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-832px;"></div><div class="nivo-slice" name="14" style="left: 896px; width: 64px; height: 540px; opacity: 0; overflow: hidden;"><img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" style="position:absolute; width:960px; height:auto; display:block !important; top:0; left:-896px;"></div></div></div>
+        
+    </div>
+</div> -->
+
+
+<div class="carousel-container">
+  <button class="arrow left" id="prevBtn">&#8592;</button>
+
+  <div class="carousel" id="carousel">
+    <img src="Stardew_Dialogue.jpg" alt="Image 1" class="carousel-image active">
+    <img src="slowly-turning-emoji.gif" alt="Image 2" class="carousel-image">
+    <img src="OIIA-Website-loop.gif" alt="Image 3" class="carousel-image">
+    <!-- Add more images as needed -->
+  </div>
+
+  <button class="arrow right" id="nextBtn">&#8594;</button>
+</div>
+
+
+  <script src="galleryscript.js"></script>
+</body>
+</html>
